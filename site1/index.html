@@ -4,26 +4,34 @@
         <title>Online Professional hiring System</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mycss.css">
     </head>
-    <body bgcolor="cyan">
+    <body>
     <center>
-        
+        <div>
             <form action="home.html">
-             <h2> Username:
-                <input type="text" name="uname" title="Enter username">
-                <br>
-                <br>
-                Password:
-                <input type="password" name="pass" title="Enter password">
-                <br>
-                <br></h2>
-            
-                <input type="submit" value="Login" >&nbsp;&nbsp;<br>
-                <a href="signup.html">Create Account</a>
+                <table>
+                    <tr>
+                        <td>
+                            <h2> Username:</h2></td>
+                        <td>
+                            <input  type="text" name="uname" title="Enter username"></td>
+                        <br><br>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Password:</h2></td>
+                        <td>
+                            <input  type="password" name="pass" title="Enter password"></td>
+                        <br>
+                    <br></tr>
+                </table>
+                <input class="m1" type="submit" value="Login" >&nbsp;&nbsp;<br><br>
+                <a href="signup.html"><button>Create Account</button></a>
                 &nbsp;&nbsp;
-                <a href="forgot.html">Forgot password</a>
+                <a href="forgot.html"><button>Forgot password</button></a>
         </form>
-     
-    </center>   
+        </div>
+    </center>
     </body>
 </html>
