@@ -5,32 +5,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="mycss.css">
+        <script src="login.js">
+         </script>
     </head>
     <body>
     <center>
-        <div>
-            <form action="home.html">
+        
+        <div class='index' >
+            <form name="myform" method="post" id="form_id" >
                 <table>
                     <tr>
-                        <td>
+                        <td >
                             <h2> Username:</h2></td>
                         <td>
-                            <input  type="text" name="uname" title="Enter username"></td>
+                            <input id="uname" type="text" name="uname" title="Enter username" value="admin"></td>
                         <br><br>
                     </tr>
                     <tr>
                         <td>
                             <h2>Password:</h2></td>
                         <td>
-                            <input  type="password" name="pass" title="Enter password"></td>
+                            <input id="pass" type="password" name="pass" title="Enter password" value="admin"></td>
                         <br>
                     <br></tr>
                 </table>
-                <input class="m1" type="submit" value="Login" >&nbsp;&nbsp;<br><br>
-                <a href="signup.html"><button>Create Account</button></a>
+                <input  class="m1" type="button" value="Login" onclick="check()">&nbsp;&nbsp;<br><br>
+               
+        </form>
+            
+                 <a href="signup.html"><button>Create Account</button></a>
                 &nbsp;&nbsp;
                 <a href="forgot.html"><button>Forgot password</button></a>
-        </form>
+                <p id="p1"></p>
         </div>
     </center>
     </body>

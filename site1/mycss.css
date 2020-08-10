@@ -15,7 +15,7 @@ h1 {
     color:darkcyan;
 }
 
-div{
+div.index{
     background-color: white;
     border:1px;
     border-radius: 10px;
@@ -66,3 +66,18 @@ button.b1 {
 img {
     border-radius: 25px;
 }
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+

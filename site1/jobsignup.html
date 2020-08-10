@@ -10,6 +10,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="mycss.css">
+        <script src="jobsignup.js">
+         </script>
     </head>
     <body bgcolor="cyan">
         
@@ -34,26 +36,26 @@ and open the template in the editor.
                 <table>
                 <tr>
                     <th>Enter Profession:</th>
-                    <td><input type="text" name="uname" title="Enter Your Name"></td>
+                    <td><input class="details" type="text" name="uname" title="Enter Your Name"></td>
                 </tr>
                 <br>
                 <br>
                 <tr>
                     <th>Enter Wages:</th>
                     
-                    <td><input type="number" name="uwage" title="Not compulsory"></td>
+                    <td><input class="details" type="number" name="uwage" title="Not compulsory"></td>
                 </tr>
                 <br>
                 <br>
                 <tr>
                     <th>Enter Address.:</th>
-                    <td><textarea name="uaddress" rows="4" cols="50" title="address."></textarea></td>
+                    <td><textarea class="details"  name="uaddress" rows="4" cols="50" title="address."></textarea></td>
                 <tr>
                 <br>
                 <br>
                  <tr>
                     <th>Enter Experience:</th>
-                    <td><textarea type="number" name="uex" title="Enter experince in year"></textarea></td>
+                    <td><textarea  class="details" type="number" name="uex" title="Enter experince in year"></textarea></td>
                 <tr>
                 <br>
                 <br>
@@ -61,11 +63,41 @@ and open the template in the editor.
               
                 <tr>
                     <th>
-                        <input type="submit" value="Signup" ></th>
+                        <input  type="submit" value="Signup" ></th>
                 </tr>
+               </table> 
+            </form>
+            <br>
+             <button id="demo">Display</button> 
+               
+             <div id="div1"> 
+                <table>
+             
+             <tr>
+                 <th >
+                     Profession:
+                 </th>  <td class="td"></td> 
+             </tr>
+             <tr>
+                 
+                 <th>
+                     Wages:
+                 </th>    <td class="td" ></td> 
+             </tr>
+             <tr>
+                 <th>
+                     Address:
+                 </th>  <td class="td"></td>   
+             </tr>
+             <tr>
+                 <th>
+                     Experience:
+                 </th>  <td class="td"></td>   
+             </tr>
             
-                </table>
-        </form>
+         </table>
+             </div>
+       
        
     </body>
 </html>
