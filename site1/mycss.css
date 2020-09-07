@@ -1,8 +1,13 @@
+html div {
+    font-family: serif;
+   
+  }
+
 body {
     
-    background-image:linear-gradient(to right , cyan , lightblue);
-    background-color: mediumseagreen;
-    
+       background-color: lightcoral;
+        margin-left: 1rem;
+        margin-right: 1rem;
 }
 h2 {
     color:darkcyan;
@@ -15,41 +20,42 @@ h1 {
     color:darkcyan;
 }
 
-div.index{
+.index{
     background-color: white;
-    border:1px;
-    border-radius: 10px;
-    width:500px;
-    height:200px;
     
+    margin-top: 8rem;
+    border-radius: 10px;
+    width:550px;
+    height:450px;
+    align-content: center;
+    align-self: center;
     padding-bottom: 200px;
 }
-div.head {
+.head {
     background-color: white;
     border:1px;
+    margin-top: 0.5rem;
     border-radius: 25px;  
     height:100px;
     width:1000px;
      padding-bottom: 2px;
-     padding-top: 1px;
+     padding-top: 20px;
 }
 
- 
-button {
-    
-    border-radius: 10px;
-    padding:10px;
-    width:100px;
-   background-image:linear-gradient(to right , cyan , lightblue);
-    background-color: mediumseagreen;
-}
-button.b1 {
+ .nav1
+ {
+     background-color: black;
+     padding: 1rem;
+     margin-left: 0rem;
+ }
+
+.b1 {
     
     border-radius: 10px;
     padding:10px;
     width:100px;
      
-    background-color: white;
+    
 }
 .m1 {
      border-radius: 20px;
@@ -68,7 +74,7 @@ img {
 }
 
 table, td, th {  
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   text-align: left;
 }
 
