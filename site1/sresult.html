@@ -9,22 +9,94 @@ and open the template in the editor.
         <title>Online Professional hiring System</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="resource/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="mycss.css">
+        <!--<link rel="stylesheet" type="text/css" href="resource/bootstrap.css">
+       <link rel="stylesheet" type="text/css" href="mycss.css">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-        <script src="resource/jquery-3.5.1.min.js">
-        </script>
+        <style>
+            .head {
+                    background-color: white;
+                    border:1px;
+                    margin-top: 0.5rem;
+                    border-radius: 25px;  
+                    height:100px;
+                    width:1000px;
+                    padding-bottom: 2px;
+                    padding-top: 20px;
+
+                    }
+
+                .nav1
+                {
+                    background-color: rgb(60,60,60);
+                    padding: 1rem;
+                    margin-left: -1rem;
+                    margin-right: -1rem;
+                    color: white;
+                    
+                }
+            .nav2 {
+                font-size: 1.5em;
+                color: white;
+            }
+
+
+
+        </style>
+
+
+        
+
+<!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+
 
         <script>
             $(function(){
-                $("#header").load("header.html"); 
+
+
+              $("div.pack").hide();
+                $("div.pack").fadeIn(2000);
+               
+                $("#b1").click(function(){
+
+                     
+                    $('#p1').html('<table><tr><td>Enter Name: </td><td><input id="ename" type="text" name="ename"/> <br/></td></tr> <tr><td>Enter Profession:</td> <td><input id="pname" type="text" name="pname"/><br/></td></tr> <tr><td>Enter Mobile no:</td><td> <input id="mob" type="text" name="mob"/><br/></td></tr> <tr><td> Enter experience: </td><td><input id="exp" type="text" name="exp"/><br/></td></tr> <tr><td>Enter Rating: </td><td><input id="rat" type="text" name="rat"/><br/></td></tr></table><button id="a1" type=button class="btn btn-primary">Submit</button><br/><br/>')
+                   
+                     
+                    $("#a1").click(function(){
+        
+                        $("#crd").append('<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="m1 card-header card-title">'+$("#ename").val()+'</h5><p class="card-text">'+'Profession:'+$("#pname").val()+'<br>'+'Mobile no:'+$("#mob").val()+'<br>'+'Experience:'+$("#exp").val()+'<br>'+'Rating:'+'<span class="badge badge-pill badge-success">'+$("#rat").val()+'</span></p><a href="#" class="btn btn-primary">View</a>')
+
+                       
+                    });    
             
+                });
+                
             });
         </script>
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     </head>
     <body>
-        
-         <div id="header"></div>
+        <div class="pack">
+         <div>
+            <header>
+            <center>
+               <div  class="head">
+               
+                    <center>
+                <h1>Online Professional searching system</h1> 
+                </center>
+               </div>
+            </center>
+           
+        </header>
+         
+         </div>
         <hr>
         <div class="nav1">
         <ul class="nav justify-content-center nav-pills ">
@@ -42,9 +114,15 @@ and open the template in the editor.
         </div>
         <hr>
         <h1> Search results:</h1>
-    <center>
+    
                      
-               
+               <button id="b1" type=button class="btn btn-primary">Add New</button><br/><br/>
+
+               <p id="p1"></p>
+        <center>
+
+
+            <div id="crd" class="card-columns" style="display: inline-block">
                 <div class="card" style="width: 18rem;">
                     
                     <div class="card-body">
@@ -118,9 +196,9 @@ and open the template in the editor.
                         <a href="#" class="btn btn-primary">View</a>
                     </div>
                 </div>
-            
+            </div>
             
     </center>
-        
+     </div>   
     </body>
 </html>
